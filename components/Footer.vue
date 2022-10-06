@@ -78,6 +78,7 @@
 </template>
 
 <script>
+    
 import { components } from '~/slices'
  export default {
       data: function() {

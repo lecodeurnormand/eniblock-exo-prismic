@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <slice-zone :components="components" :slices="document.data.slices" /> -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -888,11 +889,12 @@
 </template>
 
 <script>
-// import Header from "../components/Header.vue";
-// import Footer from "../components/Footer.vue";
+  import { components } from '~/slices'
 export default {
     name: "IndexPage",
-    // components: { Header,Footer }
+    data: function () {
+    return { components }
+  },
     async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.query('')
     if (document) {

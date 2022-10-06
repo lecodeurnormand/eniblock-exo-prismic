@@ -62,8 +62,8 @@ export default {
     // apiOptions:{
       routes:[
         {
-          type: 'homepage',
-          path: '/'
+          type: 'page',
+          path: '/:uid'
         },
       ]
     // }

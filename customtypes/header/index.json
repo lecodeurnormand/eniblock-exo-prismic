@@ -90,6 +90,17 @@
             }
           }
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "menu_footer": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     }
   }
