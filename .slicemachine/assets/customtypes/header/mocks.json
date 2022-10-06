@@ -1,0 +1,72 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "header",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 120,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+    },
+    "links": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Labore culpa non anim proident aute fugiat.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ],
+    "cta": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Exercitation qui tempor do quis enim aute magna amet est minim dolore do adipisicing ad non. Sunt ea laboris nisi ex labore dolore mollit eiusmod eiusmod.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ],
+    "cta_button": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Aliqua reprehenderit elit dolor consectetur elit velit id consectetur nulla veniam pariatur ad ullamco anim. Do dolore ipsum non sunt anim dolore sint ad nulla esse ea quis esse. Laborum cupidatat pariatur eu do ea.",
+            "spans": []
+          }
+        ],
+        "link": [
+          {
+            "type": "paragraph",
+            "text": "Ea nisi cillum ex Lorem eu veniam laborum fugiat proident exercitation et sint. Elit incididunt irure reprehenderit adipisicing.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "footer",
+  "label": "footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "menu_footer": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

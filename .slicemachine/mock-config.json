@@ -1,0 +1,17 @@
+{
+  "_cts": {
+    "navigation": {},
+    "header": {},
+    "footer": {},
+    "test": {}
+  },
+  "slices": {
+    "Hero": {},
+    "MenuFooter": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    }
+  }
+}

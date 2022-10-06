@@ -1,0 +1,134 @@
+@import 'colors.scss';
+@import 'reset.scss';
+@import 'devtools.scss';
+
+@font-face {
+    font-family: "Chivo-Regular";
+    src: url("'~assets/fonts/Chivo-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Chivo-Bold";
+    src: url("~assets/fonts/Chivo-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Chivo-Light";
+    src: url("~assets/fonts/Chivo-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Nunito-Bold";
+    src: url("~assets/fonts/Nunito-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Nunito-Regular";
+    src: url("~assets/fonts/Nunito-Regular.ttf") format("truetype");
+  }
+/*===================================
+=                HEADING           =
+===================================*/
+
+$h1_textsize_desktop : 52px;
+$h1_textsize_tablet : 40px;
+
+$h2_textsize_desktop : 44px;
+$h2_textsize_tablet : 32px;
+
+$h3_textsize_desktop : 32px;
+$h3_textsize_tablet : 26px;
+
+$h4_textsize_desktop : 24px;
+$h4_textsize_tablet : 24px;
+
+$h5_textsize_desktop : 20px;
+$h5_textsize_tablet : 18px;
+
+$h6_textsize_desktop : 16px;
+$h6_textsize_tablet : 16px;
+
+@mixin styleH($hx, $color:$greyscale_black, $font: $font_1_bold){
+            
+	@if $hx== "h1" {
+
+        font-size: $h1_textsize_desktop;
+        $lineHeight: $h1_textsize_desktop * 1;
+        line-height: $lineHeight;
+	}
+    @else if $hx== "h2"{
+        font-size: $h2_textsize_desktop;
+        $lineHeight: $h2_textsize_desktop * 1;
+        line-height: $lineHeight;
+    }
+    @else if $hx== "h3"{
+        font-size: $h3_textsize_desktop;
+        $lineHeight: $h3_textsize_desktop * 1;
+        line-height: $lineHeight;
+    }
+    @else if $hx== "h4"{
+        font-size: $h4_textsize_desktop;
+        $lineHeight: $h4_textsize_desktop * 1;
+        line-height: $lineHeight;
+    }
+    @else if $hx== "h5"{
+        font-size: $h5_textsize_desktop;
+        $lineHeight: $h5_textsize_desktop * 1;
+        line-height: $lineHeight;
+    }
+    @else if $hx== "h6"{
+        font-size: $h6_textsize_desktop;
+        $lineHeight: $h6_textsize_desktop * 1.3;
+        line-height: $lineHeight;
+    }
+	color: $color;
+	font-family: $font;
+}
+
+/*=====  End of HEADING  ======*/
+
+/*===================================
+=                FONT    FA       =
+===================================*/
+
+//FAMILY
+
+$font_1_light: 'Chivo-Light';
+$font_1_regular: 'Chivo-Regular';
+$font_1_bold: 'Chivo-Bold';
+
+$font_2_regular: 'Nunito-Regular';
+$font_2_bold: 'Nunito-Bold';
+
+//SIZE
+
+$big_textsize_all: 18px;
+$medium_textsize_all: 16px;
+$small_textsize_all: 14px;
+$tiny_textsize_all: 11px;
+
+
+/*=====  End of HEADING  ======*/
+
+// p
+
+@mixin parag($font:$font_2_regular,$size:$medium_textsize_all,$fw:400,$lh:130%){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+// button
+
+@mixin button($font:$font_1_regular,$size:$medium_textsize_all,$fw:400,$lh:130%){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin hover($bg:$primary_color_green,$border:1px $primary_color_green solid,$b-radius:5px){
+    background:$bg;
+    border:$border;
+    border-radius: $b-radius;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+}
+

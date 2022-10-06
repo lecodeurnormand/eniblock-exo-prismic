@@ -1,0 +1,65 @@
+<template>
+    <header>
+    <div class="wrapper">
+        <div class="container-logo">
+            <!-- <div class="logo-eniblock" v-if="header.data.logo">
+                <PrismicImage :field="header.data.logo" /> 
+                </div>  -->
+                <div class="logo-eniblock" >
+                <img src="~assets/svg/logo-header.svg" alt="logo en">
+                <img src="~assets/svg/logo-eniblock.svg" alt="logo eniblock">
+                </div>
+            
+            <div class="container-burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+        </div></div>
+     
+    <div class="container-nav">
+            <ul>
+                <li v-for="item in header.data.links"
+                    :key="$prismic.asText(item.label)">
+                <PrismicLink :field="item.link">
+                    {{ $prismic.asText(item.label) }}
+                </PrismicLink>
+                    <div class="arrow-down"><img src="~assets/svg/arrow-down.svg" alt=" arrow down"></div>
+                </li>
+            </ul>
+        <div class="container-cta" v-for="item in header.data.cta"
+                :key="$prismic.asText(item.label)">
+            <p><PrismicLink :field="item.link">
+                    {{ $prismic.asText(item.label) }}
+                </PrismicLink>
+                <div class="arrow-right">
+                    <img src="~assets/svg/arrow-right.svg" alt="fleche droite">
+                </div>
+            </p>
+            <div class="button" v-for="item in header.data.cta_button"
+                :key="$prismic.asText(item.label)">
+                    
+                <!-- <a href="#" class="btn"> -->
+                    <PrismicLink :field="item.link" class="btn">
+                    <span class="btn-text">{{ $prismic.asText(item.label) }}</span>
+                </PrismicLink>
+                <!-- </a> -->
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+</template>
+
+
+<script>
+import { empty } from 'fp-ts/lib/ReadonlyRecord';
+    export default {
+      data() {
+        return {
+          header: {}
+        }
+      },
+      async fetch() {
+        this.header = await this.$prismic.api.getSingle('header')
+      }
+    }
+    </script>
