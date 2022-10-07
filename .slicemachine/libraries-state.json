@@ -226,9 +226,30 @@
                     "allowTargetBlank": true,
                     "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
+                },
+                "para": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "para",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
                 }
               },
-              "items": {},
+              "items": {
+                "img": {
+                  "type": "Image",
+                  "config": {
+                    "label": "img",
+                    "constraint": {
+                      "width": 90,
+                      "height": 90
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -238,31 +259,48 @@
             "variation": "default",
             "version": "sktwi1xtmkfgx8626",
             "items": [
-              {}
+              {
+                "img": {
+                  "dimensions": {
+                    "width": 90,
+                    "height": 90
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+                }
+              }
             ],
             "primary": {
               "subtitle": [
                 {
                   "type": "paragraph",
-                  "text": "Consectetur incididunt Lorem cupidatat aliqua sit do amet commodo. Qui incididunt et laboris in do mollit eiusmod deserunt minim minim ut minim ex.",
+                  "text": "Reprehenderit Lorem occaecat commodo pariatur incididunt quis sit cillum.",
                   "spans": []
                 }
               ],
               "title": [
                 {
                   "type": "paragraph",
-                  "text": "Minim minim et elit eu in labore magna.",
+                  "text": "Sit commodo nulla deserunt dolor eu deserunt sint nulla voluptate Lorem proident ad aute non. Minim anim non sint cupidatat laboris duis nisi nulla voluptate ex officia cupidatat occaecat. Officia aliquip quis ex sit.",
                   "spans": []
                 }
               ],
               "button_cta": {
                 "link_type": "Web",
-                "url": "https://slicemachine.dev"
+                "url": "https://prismic.io"
               },
               "label": [
                 {
                   "type": "paragraph",
-                  "text": "Excepteur adipisicing sunt labore aute voluptate sint enim reprehenderit cillum irure nulla elit cupidatat. Aute aute non enim velit commodo elit commodo ex et velit Lorem fugiat laborum nisi.",
+                  "text": "Ad fugiat do do ut.",
+                  "spans": []
+                }
+              ],
+              "para": [
+                {
+                  "type": "paragraph",
+                  "text": "Lorem officia deserunt qui duis quis. Anim Lorem dolore aute.",
                   "spans": []
                 }
               ]

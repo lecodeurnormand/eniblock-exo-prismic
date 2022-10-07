@@ -19,8 +19,14 @@
                           </PrismicLink>
                         </div>
                         <div class="container-partners">
-                            <p>Join our partners</p>
+
+                          <!-- TEST -->
+                            <p><PrismicRichText :field="slice.primary.para" /></p>
                             <div class="container-logos-partners">
+                              <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">    
+                        <PrismicImage :field="item.img" style="max-width:90px" />
+                    </div>
+                    <!-- FIN TEST -->
                                 <img src="~assets/svg/sandbox.svg" alt="logo sandbox">
                                 <img src="https://images.prismic.io/eniblock-website/2aca78db-3d90-44c6-a8ac-b0133947c625_logo-2.png?auto=compress,format" alt="logo_Man_of_the_Match">
                                 <img src="https://images.prismic.io/eniblock-website/cf19a673-1888-447a-94e1-f22ebca5eabd_logo-3.png?auto=compress,format" alt="">
