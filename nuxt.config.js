@@ -1,9 +1,10 @@
 import { apiEndpoint } from './sm.json'
 
 export default {
+  ssr: true, // default value
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'eniblock-exo',
+    title: 'Eniblock exo',
     htmlAttrs: {
       lang: 'en'
     },

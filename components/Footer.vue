@@ -1,9 +1,8 @@
 <template>
   <footer>
-    <slice-zone :components="components" :slices="footer.data.slices" />
         <div class="container-eniblock">
             <div class="logo-footer">
-                <PrismicImage :field="footer.data.logo" /> 
+                <!-- <PrismicImage :field="footer.data.logo" />  -->
                 <img src="~assets/svg/logo-footer.svg" alt="">
             </div>
 <div class="nav-footer">
@@ -78,13 +77,11 @@
 </template>
 
 <script>
-    
-import { components } from '~/slices'
+
  export default {
       data: function() {
         return {
           footer: {},
-          components
         }
       },
       async fetch() {

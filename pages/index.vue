@@ -1,12 +1,5 @@
 <template>
   <div>
-    <!-- <slice-zone :components="components" :slices="document.data.slices" /> -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eniblock</title>
-</head>
 <!-- <?php include('common-devtools.php') ?> -->
     <main>
         <section class="section-head">
@@ -889,13 +882,9 @@
 </template>
 
 <script>
-  import { components } from '~/slices'
 export default {
     name: "IndexPage",
-    data: function () {
-    return { components }
-  },
-    async asyncData({ $prismic, params, error }) {
+    async asyncData({ $prismic, error }) {
     const document = await $prismic.api.query('')
     if (document) {
       return { document }

@@ -4,7 +4,9 @@
       :header="header"
       />
       <main><nuxt/></main>
-      <Footer v-if="footer.data" :footer="footer"/>
+      <Footer v-if="footer.data" 
+      :footer="footer"
+      />
     </div>
   </template>
   

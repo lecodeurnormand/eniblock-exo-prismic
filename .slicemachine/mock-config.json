@@ -1,7 +1,16 @@
 {
   "_cts": {
     "navigation": {},
-    "header": {},
+    "header": {
+      "links": {
+        "label": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 5
+          }
+        }
+      }
+    },
     "footer": {},
     "test": {}
   },

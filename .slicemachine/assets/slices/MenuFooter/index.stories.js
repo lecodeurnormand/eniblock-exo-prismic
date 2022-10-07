@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"label":[{"type":"paragraph","text":"Irure nulla officia consequat proident. Amet incididunt et reprehenderit enim in quis.","spans":[]}],"link":{"link_type":"Web","url":"http://twitter.com"}}],"primary":{"title":[{"type":"paragraph","text":"Occaecat sit occaecat officia labore esse reprehenderit aute ad irure quis do occaecat commodo. Aliqua dolor nulla est sunt cillum occaecat. Amet consequat nulla nulla Lorem non aliqua eu et aliquip elit cillum eu deserunt.","spans":[]}]},"slice_type":"menu_footer","id":"_Default"}
+      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"label":[{"type":"paragraph","text":"Ex anim consectetur aliqua veniam sunt ad nisi labore aliqua nulla veniam. Non sint nulla aliqua in deserunt pariatur nostrud. Labore ullamco nulla duis sint veniam eu nulla duis eiusmod fugiat adipisicing nisi.","spans":[]}],"link":{"link_type":"Web","url":"https://slicemachine.dev"}}],"primary":{"title":[{"type":"paragraph","text":"Cupidatat fugiat ullamco cupidatat aliqua commodo ea et veniam sint elit do quis laboris dolore. Id enim ullamco aute velit ea magna nisi sunt velit do aute. Lorem cillum excepteur adipisicing ex consectetur.","spans":[]}],"link":{"link_type":"Web","url":"https://prismic.io"}},"slice_type":"menu_footer","id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
