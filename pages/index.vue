@@ -1,5 +1,9 @@
 <template>
   <div>
+    <!-- SLICE ZONE -->
+    <!-- <slice-zone :components="components" :slices="document.data.slices" /> -->
+    <!-- END OF SLICE ZONE -->
+
 <!-- <?php include('common-devtools.php') ?> -->
     <main>
         <section class="section-head">
@@ -882,10 +886,16 @@
 </template>
 
 <script>
+
+import { components } from '~/slices' 
 export default {
+    data: function(){
+        return {components}
+    },
     name: "IndexPage",
     async asyncData({ $prismic, error }) {
     const document = await $prismic.api.query('')
+    console.log(document)
     if (document) {
       return { document }
     } else {
