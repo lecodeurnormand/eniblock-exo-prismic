@@ -12,11 +12,19 @@
       }
     },
     "footer": {},
-    "test": {}
+    "test": {},
+    "home": {},
+    "page": {}
   },
   "slices": {
     "Hero": {},
     "MenuFooter": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "SectionHead": {
       "default": {
         "primary": {},
         "items": {}

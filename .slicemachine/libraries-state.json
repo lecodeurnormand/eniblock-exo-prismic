@@ -172,6 +172,109 @@
           "extension": "vue"
         },
         "screenshotPaths": {}
+      },
+      "section_head": {
+        "library": "slices",
+        "id": "section_head",
+        "name": "SectionHead",
+        "description": "SectionHead",
+        "model": {
+          "id": "section_head",
+          "type": "SharedSlice",
+          "name": "SectionHead",
+          "description": "SectionHead",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SectionHead",
+              "primary": {
+                "subtitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "button_cta": {
+                  "type": "Link",
+                  "config": {
+                    "label": "button_cta",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "select": null
+                  }
+                },
+                "label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "subtitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Consectetur incididunt Lorem cupidatat aliqua sit do amet commodo. Qui incididunt et laboris in do mollit eiusmod deserunt minim minim ut minim ex.",
+                  "spans": []
+                }
+              ],
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Minim minim et elit eu in labore magna.",
+                  "spans": []
+                }
+              ],
+              "button_cta": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              },
+              "label": [
+                {
+                  "type": "paragraph",
+                  "text": "Excepteur adipisicing sunt labore aute voluptate sint enim reprehenderit cillum irure nulla elit cupidatat. Aute aute non enim velit commodo elit commodo ex et velit Lorem fugiat laborum nisi.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "section_head"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
       }
     }
   }

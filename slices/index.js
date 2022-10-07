@@ -2,13 +2,16 @@
 
 import Hero from './Hero';
 import MenuFooter from './MenuFooter';
+import SectionHead from './SectionHead';
 
 export {
 	Hero,
 	MenuFooter,
+	SectionHead,
 };
 
 export const components = {
 	hero: Hero,
 	menu_footer: MenuFooter,
+	section_head: SectionHead,
 };

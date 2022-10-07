@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <PrismicRichText :field="slice.primary.title" class="title" />
-    <PrismicLink :field="slice.primary.link">My Link</PrismicLink>
+    <PrismicLink :field="slice.primary.link">Lien</PrismicLink>
   </section>
 </template>
 
