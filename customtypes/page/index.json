@@ -1,6 +1,6 @@
 {
   "id": "page",
-  "label": "home",
+  "label": "Home",
   "repeatable": false,
   "status": true,
   "json": {
@@ -11,6 +11,21 @@
         "config": {
           "choices": {
             "section_head": {
+              "type": "SharedSlice"
+            },
+            "section_platform": {
+              "type": "SharedSlice"
+            },
+            "section_building": {
+              "type": "SharedSlice"
+            },
+            "section_building2": {
+              "type": "SharedSlice"
+            },
+            "section_touch": {
+              "type": "SharedSlice"
+            },
+            "section_solutions": {
               "type": "SharedSlice"
             }
           }

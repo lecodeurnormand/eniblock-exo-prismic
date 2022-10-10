@@ -2,10 +2,7 @@
         <section class="section-head">
             <div class="wrapper">
                 <div class="container-design">
-                    <div class="subtitle">
-                      <PrismicRichText :field="slice.primary.subtitle" />
-                      <!-- All-in-one platform to -->
-                    </div>
+                    <PrismicRichText :field="slice.primary.subtitle" class="subtitle" />
                         <h1>
                             <span class="title-bold"><PrismicRichText :field="slice.primary.title" /></span>
                             <span class="title-light text-1"></span>
@@ -19,20 +16,17 @@
                           </PrismicLink>
                         </div>
                         <div class="container-partners">
-
-                          <!-- TEST -->
                             <p><PrismicRichText :field="slice.primary.para" /></p>
                             <div class="container-logos-partners">
                               <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">    
-                        <PrismicImage :field="item.img" style="max-width:90px" />
-                    </div>
-                    <!-- FIN TEST -->
-                                <img src="~assets/svg/sandbox.svg" alt="logo sandbox">
-                                <img src="https://images.prismic.io/eniblock-website/2aca78db-3d90-44c6-a8ac-b0133947c625_logo-2.png?auto=compress,format" alt="logo_Man_of_the_Match">
+                            <PrismicImage :field="item.img" />
+                            </div>
+                                <!-- <img src="~assets/svg/sandbox.svg" alt="logo sandbox"> -->
+                                <!-- <img src="https://images.prismic.io/eniblock-website/2aca78db-3d90-44c6-a8ac-b0133947c625_logo-2.png?auto=compress,format" alt="logo_Man_of_the_Match">
                                 <img src="https://images.prismic.io/eniblock-website/cf19a673-1888-447a-94e1-f22ebca5eabd_logo-3.png?auto=compress,format" alt="">
                                 <img src="~assets/svg/cdd.svg" alt="caisse des depots">
                                 <img src="~assets/svg/wakam.svg" alt="logo wakam">
-                                <img src="~assets/svg/logical.svg" alt="logo logical">
+                                <img src="~assets/svg/logical.svg" alt="logo logical"> -->
                             </div>
                         </div>
                     </div>
@@ -392,15 +386,3 @@ export default {
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
 }
 </script>
-
-<style scoped>
-.section {
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
-}
-.title {
-  margin-bottom: 2em;
-}
-</style>
