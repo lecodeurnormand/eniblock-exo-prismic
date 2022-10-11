@@ -4,6 +4,7 @@ import SectionBuilding from './SectionBuilding';
 import SectionBuilding2 from './SectionBuilding2';
 import SectionHead from './SectionHead';
 import SectionPlatform from './SectionPlatform';
+import SectionReady from './SectionReady';
 import SectionSolutions from './SectionSolutions';
 import SectionTouch from './SectionTouch';
 
@@ -12,6 +13,7 @@ export {
 	SectionBuilding2,
 	SectionHead,
 	SectionPlatform,
+	SectionReady,
 	SectionSolutions,
 	SectionTouch,
 };
@@ -21,6 +23,7 @@ export const components = {
 	section_building2: SectionBuilding2,
 	section_head: SectionHead,
 	section_platform: SectionPlatform,
+	section_ready: SectionReady,
 	section_solutions: SectionSolutions,
 	section_touch: SectionTouch,
 };

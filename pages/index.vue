@@ -7,28 +7,7 @@
 <!-- <?php include('common-devtools.php') ?> -->
 <!--
 
-<section class="section-ready">
-    <div class="wrapper">
-        <div class="container-ready">
-            <div class="container-svg-left">
-                <img src="~assets/svg/ready-left.svg" alt="picture on the left">
-            </div>
-            <div class="container-svg-right">
-                <img src="~assets/svg/ready-right.svg" alt="picture on the right">
-            </div>
-            <div class="container-text">
-                <h2>
-                    <span class="font-thin">Ready to</span>
-                    <span class="font-bold">Start ?</span>
-                </h2>
-                    <p>Eniblock is on a mission to democratize access to Web3. Come explore what we're building and join us on the pursuit of making real-world impact.</p>
-                    <a href="#" class="btn">
-                        <span class="btn-text">Book a Call</span>
-                    </a>
-        </div>   
-    </div>
-</div>
-</section>
+
 <section class="section-who">
     <div class="wrapper">
         <div class="container-who">

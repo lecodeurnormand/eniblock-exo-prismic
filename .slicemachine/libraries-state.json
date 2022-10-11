@@ -583,6 +583,108 @@
           }
         }
       },
+      "section_ready": {
+        "library": "slices",
+        "id": "section_ready",
+        "name": "SectionReady",
+        "description": "SectionReady",
+        "model": {
+          "id": "section_ready",
+          "type": "SharedSlice",
+          "name": "SectionReady",
+          "description": "SectionReady",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SectionReady",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2,strong"
+                  }
+                },
+                "para": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "para",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Service",
+                  "spans": []
+                }
+              ],
+              "para": [
+                {
+                  "type": "paragraph",
+                  "text": "Exercitation irure reprehenderit minim eiusmod cillum eu nostrud laborum commodo exercitation. Mollit magna aliquip nisi velit commodo dolore enim culpa nulla sunt cillum id eu eu commodo. Reprehenderit mollit excepteur tempor.",
+                  "spans": []
+                }
+              ],
+              "label": [
+                {
+                  "type": "paragraph",
+                  "text": "Incididunt incididunt exercitation ullamco amet consectetur. Nostrud consectetur cupidatat excepteur aute pariatur. Ipsum fugiat aute velit nulla quis consectetur tempor id.",
+                  "spans": []
+                }
+              ],
+              "link": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              }
+            },
+            "slice_type": "section_ready"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "section_solutions": {
         "library": "slices",
         "id": "section_solutions",
@@ -817,7 +919,13 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/guillaumeducuing/eniblock-exo/slices/SectionSolutions/default/preview.png",
+            "width": 2382,
+            "height": 1814
+          }
+        }
       },
       "section_touch": {
         "library": "slices",

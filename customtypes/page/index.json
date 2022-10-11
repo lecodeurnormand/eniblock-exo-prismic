@@ -27,6 +27,9 @@
             },
             "section_solutions": {
               "type": "SharedSlice"
+            },
+            "section_ready": {
+              "type": "SharedSlice"
             }
           }
         }
