@@ -2,9 +2,9 @@
      <section class="section-platform">
         <div class="wrapper">
             <div class="container-text">
-                <PrismicRichText :field="slice.primary.title" class="font-thin" />
+                <PrismicRichText :field="slice.primary.title"/>
                     <div class="separate-bar"></div>
-                    <PrismicRichText :field="slice.primary.para" />
+                    <PrismicText :field="slice.primary.para" wrapper="p" />
                     </div>
             </div>
         <div class="container-cards">

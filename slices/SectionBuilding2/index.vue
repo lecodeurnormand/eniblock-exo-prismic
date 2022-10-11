@@ -1,5 +1,6 @@
 <template>
-  <section class="section-building">
+  <section class="section-building-two">
+    <div class="wrapper">
     <div class="container-text">
       <PrismicText :field="slice.primary.title2" wrapper="h6" />
             </div>
@@ -24,30 +25,7 @@
                 </div>
             </div>
           </div>
-                <!-- <div class="container-status">
-                    <div class="container-img">
-                        <img src="~assets/svg/ethereum.svg" alt="logo ethereum">
-                    </div>
-                    <div class="container-soon">
-                        <p>coming soon</p>
-                    </div>
-                </div>
-                <div class="container-status">
-                    <div class="container-img">
-                    <img src="~assets/svg/solana.svg" alt="logo solana">
-                </div>
-                        <div class="container-soon">
-                            <p>coming soon</p>
-                        </div>
-                </div>
-                <div class="container-status">
-                    <div class="container-img">
-                    <img src="~assets/svg/polygon.svg" alt="logo polygon">
-                </div>
-                        <div class="container-soon">
-                            <p>coming soon</p>
-                        </div>
-                </div> -->
+              </div>
         </div>
   </section>
 </template>

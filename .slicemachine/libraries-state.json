@@ -843,7 +843,7 @@
                     "label": "subtitle",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "heading5,strong"
                   }
                 },
                 "title": {
@@ -852,7 +852,7 @@
                     "label": "title",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "heading5"
+                    "single": "heading5,strong"
                   }
                 },
                 "label": {
@@ -888,28 +888,28 @@
             "primary": {
               "subtitle": [
                 {
-                  "type": "heading1",
-                  "text": "Whale",
+                  "type": "heading5",
+                  "text": "Thread",
                   "spans": []
                 }
               ],
               "title": [
                 {
                   "type": "heading5",
-                  "text": "Thread",
+                  "text": "Welcome",
                   "spans": []
                 }
               ],
               "label": [
                 {
                   "type": "paragraph",
-                  "text": "Laborum aute duis ut.",
+                  "text": "Excepteur ad veniam fugiat nisi laboris ullamco labore ex in sit ipsum in aliqua officia. Lorem dolore nulla proident elit amet incididunt.",
                   "spans": []
                 }
               ],
               "link": {
                 "link_type": "Web",
-                "url": "https://prismic.io"
+                "url": "https://slicemachine.dev"
               }
             },
             "slice_type": "section_touch"

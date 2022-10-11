@@ -2,11 +2,7 @@
     <section class="section-solutions">
         <div class="wrapper">
             <div class="container-discover">
-              <PrismicRichText :field="slice.primary.title" class="font-thin" />
-                <!-- <h2>
-                    <span class="font-thin">Discover our stand-alone </span>
-                    <span class="font-bold">Solutions</span>
-                </h2> -->
+              <PrismicRichText :field="slice.primary.title"/>
                 <div class="separate-bar"></div>
             </div>
             <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">  
@@ -24,6 +20,7 @@
                       </div>
                     <div class="text txt1">
                         <p>
+                            <!-- <strong></strong> -->
                             <span class="font-bold">Easily create, mint & drop an unlimited amount of NFTs & FTs</span> with custom metadata
                         </p>
                     </div>
