@@ -254,14 +254,14 @@ header {
         font-family: $font_1_light;
         color: $main_white;
         h2{
-            font-weight: 400;
             @include styleH('h2',$main_white);
+            font-family: $font_1_light;
             margin-top: 72px;
         }
         .font-thin{
             font-family: $font_1_light;
         }
-        .font-bold{
+        strong{
             font-family: $font_1_bold;
             font-weight: 100;
         }
@@ -331,16 +331,18 @@ header {
         position: absolute;
     }
 }
+
+
 .section-building{
     .wrapper{
         width: 1208px;
         margin: auto;
+    }
         img:nth-child(2){
             width: 100%;
             display: block;
             margin: auto;
         }
-    }
     background-color: $greyscale_black;
     display: flex;
     flex-direction: column;
@@ -407,6 +409,19 @@ header {
                 transition: transform 0.3s ease;
                }
         }
+    }
+}
+.section-building-two{
+    background-color: $greyscale_black;
+    display: flex;
+    flex-direction: column;
+    color: $main_white;
+    font-family: $font_2_regular;
+    text-align: center;
+    padding-bottom: 100px;
+    .wrapper{
+        width: 1208px;
+        margin: auto;
     }
     .container-text{
         margin: auto;
@@ -479,6 +494,7 @@ header {
         }
     }
 }
+
 .section-touch{
     margin-top: -120px;
     .wrapper{
@@ -495,20 +511,19 @@ header {
         background-color: $primary_color_green;
         margin: auto;
         border-radius: 4px;
-        .font-thin{
-            font-family: $font_2_regular;
-            font-size: 22px;
-        }
-        .font-bold{
-            font-family: $font_1_bold;
-            font-size: 43px;
-        }
-        h5{
-            margin: 43px auto 15px auto;
-            font-weight: 400;
-            line-height: 250%;
-            text-align: center;
-            color: $greyscale_black;
+        .container-text{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            h5{
+                font-family: $font_1_regular;
+                line-height: 250%;
+                text-align: center;
+                color: $greyscale_black;
+                strong{
+                    font-family: $font_1_bold;
+                    font-size: 43px;
+                }
+            }
         }
     }
     .btn {
@@ -546,13 +561,10 @@ header {
         margin-top: 150px;
         text-align: center;
         h2{
-            font-weight: 400;
             @include styleH('h2');
-        }
-        .font-thin{
             font-family: $font_1_light;
         }
-        .font-bold{
+        strong{
             font-family: $font_1_bold;
         }
         .separate-bar{
@@ -569,7 +581,7 @@ header {
         .text{
             @include parag($size:16px,$fw:0);
         }
-        .font-bold{
+        strong{
             font-family: $font_2_bold;
         }
         .container-articles{
@@ -666,7 +678,7 @@ header {
         .font-thin{
             font-family: $font_1_light;
         }
-        .font-bold{
+        strong{
             font-family: $font_1_bold;
         }
         p{
@@ -720,7 +732,7 @@ header {
         .font-thin{
             font-family: $font_1_light;
         }
-        .font-bold{
+        strong{
             font-family: $font_1_bold;
         }
     }
@@ -869,7 +881,7 @@ header {
         .font-thin{
             font-family: $font_1_light;
         }
-        .font-bold{
+        strong{
             font-family: $font_1_bold;
         }
     }
@@ -925,7 +937,7 @@ header {
         .font-thin{
             font-family: $font_1_light;
         }
-        .font-bold{
+        strong{
             font-family: $font_1_bold;
         }
     }
@@ -1019,7 +1031,7 @@ header {
     .font-thin{
         font-family: $font_1_light;
     }
-    .font-bold{
+    strong{
         font-family: $font_1_bold;
     }
     form{
@@ -1415,6 +1427,8 @@ header{
             margin: auto;
         }
     }
+}
+.section-building-two{
     .container-icons{
         width: 100%;
         display: flex;
@@ -1435,6 +1449,8 @@ header{
         flex:  1 1 50%;
     }
 }
+    
+
 // ---------------FIN SECTION---------------
 // SECTION TOUCH
 .section-touch{
@@ -1682,8 +1698,6 @@ footer{
 }
 /*=====  End of BREAK POINT  ======*/
 }
-
-
 
 /*===================================
 =            BREAK POINT MOBILE     =
@@ -1974,7 +1988,7 @@ header{
         .font-thin{
             @include styleH('h5',$h5_textsize_tablet);
         }
-        .font-bold{
+        strong{
             @include styleH('h4',$h4_textsize_tablet)
         }
     }
