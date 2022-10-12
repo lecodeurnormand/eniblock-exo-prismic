@@ -1,12 +1,10 @@
 <template>
     <div>
       <Header v-if="header.data"
-      :header="header"
-      />
+      :header="header"/>
       <main><nuxt/></main>
       <Footer v-if="footer.data" 
-      :footer="footer"
-      />
+      :footer="footer"/>
     </div>
   </template>
   
@@ -29,7 +27,37 @@
       async fetch() {
         this.header = await this.$prismic.api.getSingle('header'),
         this.footer = await this.$prismic.api.getSingle('footer')
+      },
+      methods: {
+  handleScroll () {
+    let button = document.querySelector('header .button');
+    let button_text = document.querySelector('header .button .btn-text');
+    let header = document.querySelector('header');
+      if(window.scrollY>20){
+          header.style.position="fixed";
+          header.style.height = "60px";
+          header.style.padding ="0px";
+          button.classList.add('button-green');
+          button_text.classList.add('btn-text-black');
       }
+      else{
+          header.style.position= "absolute";
+          header.style.height = "90px";
+          button.classList.remove('button-green');
+          button_text.classList.remove('btn-text-black');
+      }
+  }
+},
+created () {
+    if (process.client) { 
+        window.addEventListener('scroll', this.handleScroll);
+    }
+},
+destroyed () {
+    if (process.client) { 
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+}
   }
   
   </script>

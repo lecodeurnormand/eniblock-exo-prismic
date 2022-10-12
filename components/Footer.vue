@@ -2,22 +2,16 @@
   <footer>
         <div class="container-eniblock">
             <div class="logo-footer">
-                <!-- <PrismicImage :field="footer.data.logo" />  -->
+
                 <img src="~assets/svg/logo-footer.svg" alt="">
             </div>
 <div class="nav-footer">
     <nav class="nav-footer-list">
-        <!-- <h6><PrismicRichText :field="slice.primary.title" /></h6> -->
 
-        <!-- <PrismicRichText :field="slice.primary.title" /> -->
         <h6>Products</h6>
             <ul>
                 <li>
                 </li>
-                <!-- <li>Eniblock Platform</li>
-                <li>Eniblock NFTs</li>
-                <li>Eniblock Launchpad</li>
-                <li>Eniblock Wallet</li> -->
             </ul>
     </nav>
     <nav class="nav-footer-list">

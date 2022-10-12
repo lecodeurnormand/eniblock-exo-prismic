@@ -2,12 +2,8 @@
     <header>
     <div class="wrapper">
         <div class="container-logo">
-            <!-- <div class="logo-eniblock" v-if="header.data.logo">
-                <PrismicImage :field="header.data.logo" /> 
-                </div>  -->
                 <div class="logo-eniblock" >
-                    <img src="~assets/svg/logo-header.svg" alt="logo en">
-                    <img src="~assets/svg/logo-eniblock.svg" alt="logo eniblock">
+                    <PrismicImage :field="header.data.logo" />
                 </div>
             
             <div class="container-burger">
@@ -28,14 +24,12 @@
             </ul>
     <div class="container-cta" v-for="item in header.data.cta"
             :key="$prismic.asText(item.label)">
-                <p>
                     <PrismicLink :field="item.link">
                         {{ $prismic.asText(item.label) }}
                     </PrismicLink>
                     <div class="arrow-right">
                         <img src="~assets/svg/arrow-right.svg" alt="fleche droite">
-                    </div>
-                </p>
+                    </div> 
                 <div class="button" v-for="item in header.data.cta_button"
                 :key="$prismic.asText(item.label)">
                     

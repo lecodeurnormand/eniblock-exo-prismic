@@ -9,53 +9,11 @@
                 <PrismicText :field="item.title" wrapper="h5" />
                   <PrismicText :field="item.para" wrapper="p" />
                     <PrismicLink :field="item.link">
-                      <PrismicText :field="item.label_link" wrapper="a" />
+                      <PrismicText :field="item.label_link" wrapper="span" />
                     </PrismicLink>
                     <img src="~assets/svg/arrow-right.svg" alt="fleche droite">
           </div>
         </div> 
-    <!-- <div class="container-text">
-      <PrismicRichText :field="slice.primary.title_2" />
-            </div>
-            <div class="container-icons">
-                <div class="blockchains">
-                    <div class="content-white">
-                      <PrismicText :field="slice.primary.title_small" wrapper="h6" />
-                    </div>
-                </div>
-            <div class="container-status">
-                <div class="container-img">
-                    <img src="~assets/svg/tezos.svg" alt="logo tezos">
-                </div>
-                <div class="container-live">
-                    <p>live now</p>
-                </div>
-            </div>
-                <div class="container-status">
-                    <div class="container-img">
-                        <img src="~assets/svg/ethereum.svg" alt="logo ethereum">
-                    </div>
-                    <div class="container-soon">
-                        <p>coming soon</p>
-                    </div>
-                </div>
-                <div class="container-status">
-                    <div class="container-img">
-                    <img src="~assets/svg/solana.svg" alt="logo solana">
-                </div>
-                        <div class="container-soon">
-                            <p>coming soon</p>
-                        </div>
-                </div>
-                <div class="container-status">
-                    <div class="container-img">
-                    <img src="~assets/svg/polygon.svg" alt="logo polygon">
-                </div>
-                        <div class="container-soon">
-                            <p>coming soon</p>
-                        </div>
-                </div>
-        </div> -->
     </div>
 </section>
 </template>

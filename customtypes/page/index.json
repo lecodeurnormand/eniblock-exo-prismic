@@ -30,6 +30,21 @@
             },
             "section_ready": {
               "type": "SharedSlice"
+            },
+            "section_who": {
+              "type": "SharedSlice"
+            },
+            "section_about": {
+              "type": "SharedSlice"
+            },
+            "section_happening": {
+              "type": "SharedSlice"
+            },
+            "section_form": {
+              "type": "SharedSlice"
+            },
+            "section_join": {
+              "type": "SharedSlice"
             }
           }
         }

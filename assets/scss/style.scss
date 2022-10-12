@@ -227,14 +227,46 @@ header {
             left: 50px;
         }
         .left-top-piece{
-            animation: ltp 3s ease reverse infinite;
-        }
-        @keyframes ltp {
-            0%{
-                transform: translateY(0px);
+            animation: ltp 6.5s ease-in-out infinite;
+            @keyframes ltp {
+                0%{
+                    transform: translateY(-30px);
+                }
+                50%{
+                    transform: translateY(120px);
+                }
+                100%{
+                    transform: translateY(-30px);
+                }
             }
-            100%{
-                transform: translateY(-200px);
+        }
+        
+        .bot-piece{
+            animation: bp 6.5s ease-in-out infinite ;
+            @keyframes bp {
+                0%{
+                    transform: translateY(120px);
+                }
+                50%{
+                    transform: translateY(-122px);
+                }
+                100%{
+                    transform: translateY(120px);
+                }
+            }
+        }
+        .right-top-piece{
+            animation: rtp 6.5s ease-in-out infinite;
+            @keyframes rtp {
+                0%{
+                    transform: translateY(-40px);
+                }
+                50%{
+                    transform: translateY(217px);
+                }
+                100%{
+                    transform: translateY(-40px);
+                }
             }
         }
     }
@@ -257,9 +289,6 @@ header {
             @include styleH('h2',$main_white);
             font-family: $font_1_light;
             margin-top: 72px;
-        }
-        .font-thin{
-            font-family: $font_1_light;
         }
         strong{
             font-family: $font_1_bold;
@@ -516,9 +545,10 @@ header {
             margin-bottom: 20px;
             h5{
                 font-family: $font_1_regular;
-                line-height: 250%;
+                line-height: 180%;
                 text-align: center;
                 color: $greyscale_black;
+                font-size: 20px;
                 strong{
                     font-family: $font_1_bold;
                     font-size: 43px;
@@ -729,12 +759,9 @@ header {
         align-items: center; 
     }
     h2{
-        font-weight: 400;
-        @include styleH('h2',$main_white);
+        max-width: 350px;
+        @include styleH('h2',$main_white,$font:$font_1_light);
         margin-top: 200px;
-        .font-thin{
-            font-family: $font_1_light;
-        }
         strong{
             font-family: $font_1_bold;
         }
@@ -752,13 +779,16 @@ header {
             text-align: center;
         }
         .btn-text{
-            @include button($fw:900);
-         
+            p{
+                font-family:  $font_1_bold;
+                opacity: 1;
+            }
         }
     }
     p{
         opacity: 0.7;
         @include parag($size:18px);
+        padding-top: 20px;
         margin:24px auto 45px auto;
     }
     .container-card{
@@ -815,7 +845,7 @@ header {
             margin: auto;
             justify-content: center;
             align-content: center;
-            padding-top:22px ;
+            padding:32px 0px 32px 0px ;
         }
         .container-img2{
             display: flex;
@@ -856,10 +886,17 @@ header {
             font-weight: 400;
             @include styleH('h4');
             margin-top: 24px;
+            color:$main_white;
         }
         p{
             @include parag($size:16px);
             color: $greyscale_medium;
+        }
+        a:nth-child(4){
+            display: flex;
+            img{
+                padding-left: 5px;
+            }
         }   
     }
 }
@@ -878,12 +915,8 @@ header {
         margin:100px 0 100px 0;
     }
     h2{
-        font-weight: 400;
         @include styleH('h2');
         margin-bottom: 55px;
-        .font-thin{
-            font-family: $font_1_light;
-        }
         strong{
             font-family: $font_1_bold;
         }
@@ -908,6 +941,7 @@ header {
     .container-right {
         align-self: flex-end;
         a{
+        display: flex;
         color: $greyscale_black;
         font-family: $font_2_bold;
         }
@@ -935,11 +969,7 @@ header {
         background: $primary_color_purple;
     }
     h2{
-        font-weight: 400;
-        @include styleH('h2');
-        .font-thin{
-            font-family: $font_1_light;
-        }
+        @include styleH('h2',$font:$font_1_light);
         strong{
             font-family: $font_1_bold;
         }
@@ -977,8 +1007,12 @@ header {
             height: 1px;
         }
         a{
+            display: flex;
             font-family: $font_1_bold;
             color: $greyscale_black;
+            img{
+                padding-left: 5px;
+            }
         }
     }
     .container-first-svg {
@@ -1018,8 +1052,7 @@ header {
     .container-touch{
         align-self: center;
         h2{
-            font-weight: 400;
-            @include styleH('h2');
+            @include styleH('h2',$font:$font_1_light);
             margin-bottom: 40px;
             color:$main_white;
         }
