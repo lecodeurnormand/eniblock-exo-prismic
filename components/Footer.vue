@@ -1,11 +1,11 @@
 <template>
   <footer>
+    <slice-zone :components="components" :slices="footer.data.slices" />
         <div class="container-eniblock">
             <div class="logo-footer">
-
-                <img src="~assets/svg/logo-footer.svg" alt="">
+                <!-- <PrismicImage :field="footer.data.logo" /> -->
             </div>
-<div class="nav-footer">
+<!-- <div class="nav-footer">
     <nav class="nav-footer-list">
 
         <h6>Products</h6>
@@ -29,7 +29,7 @@
                 <li>Support</li>
             </ul>
     </nav>
-</div>
+</div> -->
 <div class="subscribe">
     <div class="logos-social">
         <img src="~assets/svg/linkedin.svg" alt="logo linkedin">
@@ -71,13 +71,14 @@
 </template>
 
 <script>
-
+import { components } from '~/slices' 
  export default {
       data: function() {
         return {
           footer: {},
+          components:{}
         }
-      },
+    },
       async fetch() {
         this.footer = await this.$prismic.api.getSingle('footer')
       }

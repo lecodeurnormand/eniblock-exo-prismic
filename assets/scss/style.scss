@@ -193,7 +193,9 @@ header {
         margin-top: 32px;
         &:hover{
             @include hover($bg:transparent,$border:1px $main_white solid);
-            color:$main_white;
+            .btn-text{
+                color: $main_white;
+            }
         }
         .btn-text{
             @include button;

@@ -1723,6 +1723,94 @@
             "height": 1432
           }
         }
+      },
+      "slice_menu": {
+        "library": "slices",
+        "id": "slice_menu",
+        "name": "SliceMenu",
+        "description": "SliceMenu",
+        "model": {
+          "id": "slice_menu",
+          "type": "SharedSlice",
+          "name": "SliceMenu",
+          "description": "SliceMenu",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SliceMenu",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {
+                "label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "label": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sunt esse enim sit eiusmod cupidatat ut dolore ex ullamco qui aliqua exercitation. Id veniam do magna cupidatat incididunt consectetur commodo. Ex aute dolore aliqua culpa laborum mollit.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit ea esse velit velit et officia cillum ad aliqua nostrud esse mollit et voluptate nostrud. Quis quis incididunt ipsum aliqua.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "slice_menu"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
       }
     }
   }

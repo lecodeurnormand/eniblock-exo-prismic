@@ -14,7 +14,7 @@
                     <input type="text" placeholder="Your name" name="name" id="name">
                     <input type="email" placeholder="Your work email" name="email" id="email">
                     <textarea placeholder="Your message" name="message" id="message"></textarea>
-                    <button type="submit" name="submit" id="submit"><PrismicRichText :field="slice.primary.button" /></button>
+                    <button type="submit" name="submit" id="submit"><PrismicText :field="slice.primary.button" wrapper="span" /></button>
                 </form>
             </div>
         </div>

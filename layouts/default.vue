@@ -9,14 +9,12 @@
   </template>
   
   <script>
-  
   import Footer from '/components/Footer.vue';
   import Header from '/components/Header.vue';
-  
   export default {
     components: {
       Footer,
-      Header
+      Header,
     },
     data() {
         return {
@@ -35,14 +33,14 @@
     let header = document.querySelector('header');
       if(window.scrollY>20){
           header.style.position="fixed";
-          header.style.height = "60px";
+          header.style.height = "90px";
           header.style.padding ="0px";
           button.classList.add('button-green');
           button_text.classList.add('btn-text-black');
       }
       else{
           header.style.position= "absolute";
-          header.style.height = "90px";
+          header.style.height = "120px";
           button.classList.remove('button-green');
           button_text.classList.remove('btn-text-black');
       }

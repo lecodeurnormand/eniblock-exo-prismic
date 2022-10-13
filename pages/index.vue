@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <slice-zone :components="components" :slices="document.data.slices" />
-</div>
+    <slice-zone :components="components" :slices="home.data.slices" />
 </template>
 
 <script>
@@ -11,13 +9,13 @@ export default {
     data: function(){
         return {components}
     },
-    name: "IndexPage",
+    // name: "IndexPage",
 
     // ALL 
     async asyncData({ $prismic, error }) {
-    const document = await $prismic.api.getSingle('page')
-    if (document) {
-      return { document }
+    const home = await $prismic.api.getSingle('page')
+    if (home) {
+      return { home }
     } else {
       error({ statusCode: 404, message: 'Page not found' })
     }
