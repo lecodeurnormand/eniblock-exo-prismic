@@ -1,46 +1,11 @@
 <template>
   <footer>
-    <slice-zone :components="components" :slices="footer.data.slices" />
-        <div class="container-eniblock">
-            <div class="logo-footer">
-                <!-- <PrismicImage :field="footer.data.logo" /> -->
+        <div class="logo-footer">
+                <PrismicImage :field="footer.data.logo" />
             </div>
-<!-- <div class="nav-footer">
-    <nav class="nav-footer-list">
 
-        <h6>Products</h6>
-            <ul>
-                <li>
-                </li>
-            </ul>
-    </nav>
-    <nav class="nav-footer-list">
-        <h6>Company</h6>
-            <ul>
-                <li>About Eniblock</li>
-                <li>Newsroom & Blog</li>
-                <li>Investors</li>
-            </ul>
-    </nav>
-    <nav class="nav-footer-list">
-        <h6>Docs</h6>
-            <ul>
-                <li>API</li>
-                <li>Support</li>
-            </ul>
-    </nav>
-</div> -->
-<div class="subscribe">
-    <div class="logos-social">
-        <img src="~assets/svg/linkedin.svg" alt="logo linkedin">
-        <img src="~assets/svg/twitter.svg" alt="logo twitter">     
-    </div>
-    <p>Susbcribe to our newsletter</p>
-    <div class="email">
-        <input type="text" placeholder="Your email">
-            <img src="~assets/svg/input-footer.svg" alt="arrow black">
-            </div>
-        </div>
+            <slice-zone :components="components" :slices="footer.data.slices" class="container-eniblock" />
+
 
 
         <div class="language">
@@ -53,7 +18,7 @@
             </div>
 
 
-</div>
+
         <div class="container-copyright">
             <div class="terms"><p>Privacy policy</p><p>Terms and conditions</p></div>
                 <div class="copyright">© 2022 Eniblock. All rights reserved. Made by Bruno</div>
@@ -73,14 +38,18 @@
 <script>
 import { components } from '~/slices' 
  export default {
-      data: function() {
-        return {
-          footer: {},
-          components:{}
+    props:{
+        footer:{
+            type:Object
         }
     },
-      async fetch() {
-        this.footer = await this.$prismic.api.getSingle('footer')
-      }
+      data: function() {
+        return {
+          components
+        };
+    },
+    //   async fetch() {
+    //     this.footer = await this.$prismic.api.getSingle('footer')
+    //   }
     }
         </script>

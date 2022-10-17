@@ -7,11 +7,13 @@ import SectionForm from './SectionForm';
 import SectionHappening from './SectionHappening';
 import SectionHead from './SectionHead';
 import SectionJoin from './SectionJoin';
+import SectionNewsroom from './SectionNewsroom';
 import SectionPlatform from './SectionPlatform';
 import SectionReady from './SectionReady';
 import SectionSolutions from './SectionSolutions';
 import SectionTouch from './SectionTouch';
 import SectionWho from './SectionWho';
+import SliceFollow from './SliceFollow';
 import SliceMenu from './SliceMenu';
 
 export {
@@ -22,11 +24,13 @@ export {
 	SectionHappening,
 	SectionHead,
 	SectionJoin,
+	SectionNewsroom,
 	SectionPlatform,
 	SectionReady,
 	SectionSolutions,
 	SectionTouch,
 	SectionWho,
+	SliceFollow,
 	SliceMenu,
 };
 
@@ -38,10 +42,12 @@ export const components = {
 	section_happening: SectionHappening,
 	section_head: SectionHead,
 	section_join: SectionJoin,
+	section_newsroom: SectionNewsroom,
 	section_platform: SectionPlatform,
 	section_ready: SectionReady,
 	section_solutions: SectionSolutions,
 	section_touch: SectionTouch,
 	section_who: SectionWho,
+	slice_follow: SliceFollow,
 	slice_menu: SliceMenu,
 };

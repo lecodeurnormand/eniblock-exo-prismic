@@ -1,10 +1,21 @@
+import { TrackOpTypes } from 'vue'
 import { apiEndpoint } from './sm.json'
+import Prismic from '@prismicio/client'
+import { Link } from '@prismicio/helpers'
+
+import sm from './sm.json'
 
 export default {
   ssr: true, // default value
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Eniblock exo',
+    script: [
+      {
+        src:"https://static.cdn.prismic.io/prismic.js?new=true&repo=eniblock-exo",
+        async: true,
+      }
+    ],
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,7 +26,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
   svg:{
@@ -61,19 +72,35 @@ export default {
   prismic: {
     endpoint: apiEndpoint,
     modern: true,
-    // apiOptions:{
+    apiOptions:{
       routes:[
         {
           type: 'page',
           path: '/:uid'
         },
+        {
+          type:'blog',
+          path: '/:uid'
+        }
       ]
-    // }
+    }
     /* see configuration for more */
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ["@prismicio/vue","vue-slicezone"],
 
-  }
+  },
+  generate: {
+    routes: async () => {
+      const client = Prismic.client(sm.apiEndpoint, {
+        routes: nuxtConfig.prismic.apiOptions.routes,
+      })
+      const pages = await client.query(
+        Prismic.Predicates.at('document.type', 'page')
+      )
+
+      return pages.results.map((page) => page.url)
+    },
+  },
 }

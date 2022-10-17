@@ -1,29 +1,15 @@
 <template>
-  <div class="nav-footer">
-    <nav class="nav-footer-list">
+            <nav class="nav-footer-list">
+                <PrismicText :field="slice.primary.title" wrapper="h6" />
+                    <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">    
+                            <ul>
+                                <PrismicLink :field="item.link">
+                                    <PrismicText :field="item.label" wrapper="li" />
+                                </PrismicLink>
+                            </ul>
+                    </div>
+            </nav>
 
-        <h6><PrismicRichText :field="slice.primary.title" /></h6>
-            <ul>
-                <li>
-                </li>
-            </ul>
-    </nav>
-    <nav class="nav-footer-list">
-        <h6>Company</h6>
-            <ul>
-                <li>About Eniblock</li>
-                <li>Newsroom & Blog</li>
-                <li>Investors</li>
-            </ul>
-    </nav>
-    <nav class="nav-footer-list">
-        <h6>Docs</h6>
-            <ul>
-                <li>API</li>
-                <li>Support</li>
-            </ul>
-    </nav>
-</div>
 </template>
 
 <script>

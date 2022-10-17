@@ -1,27 +1,19 @@
 {
-  "id": "footer",
-  "label": "footer",
+  "id": "newsroom",
+  "label": "Newsroom",
   "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "logo": {
-        "type": "Image",
-        "config": {
-          "label": "logo",
-          "constraint": {},
-          "thumbnails": []
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "slice_menu": {
+            "section_newsroom": {
               "type": "SharedSlice"
             },
-            "slice_follow": {
+            "section_happening": {
               "type": "SharedSlice"
             }
           }

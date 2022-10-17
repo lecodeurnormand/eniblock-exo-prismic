@@ -1,6 +1,8 @@
 <template>
-    <slice-zone type="page" :uid="$route.params.uid" />
-  </template>
+  <div>
+    <slice-zone type="blog" :uid="$route.params.uid" />
+  </div>
+</template>
   
   <script>
     import SliceZone from 'vue-slicezone'
@@ -10,12 +12,11 @@
         SliceZone,
       },
       async asyncData({ $prismic, params, error }) {
-    const document = await $prismic.api.getByUID('page', params.uid)
-
+    const document = await $prismic.api.getByUID("blog", params.uid)
     if (document) {
       return { document }
     } else {
-      error({ statusCode: 404, message: 'Page not found' })
+      error({ statusCode: 404, message: "Page not found" })
     }
   }
     }

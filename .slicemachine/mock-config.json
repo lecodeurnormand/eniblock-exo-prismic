@@ -17,7 +17,9 @@
     "page": {},
     "menu": {
       "menu_links": {}
-    }
+    },
+    "newsroom": {},
+    "blog": {}
   },
   "slices": {
     "Hero": {},
@@ -249,6 +251,24 @@
     },
     "Footer": {},
     "SliceMenu": {
+      "default": {
+        "primary": {},
+        "items": {
+          "label": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "SliceFollow": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "SectionNewsroom": {
       "default": {
         "primary": {}
       }

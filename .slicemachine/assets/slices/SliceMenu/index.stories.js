@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"label":[{"type":"paragraph","text":"Sunt esse enim sit eiusmod cupidatat ut dolore ex ullamco qui aliqua exercitation. Id veniam do magna cupidatat incididunt consectetur commodo. Ex aute dolore aliqua culpa laborum mollit.","spans":[]}],"link":{"link_type":"Web","url":"http://twitter.com"}}],"primary":{"title":[{"type":"paragraph","text":"Reprehenderit ea esse velit velit et officia cillum ad aliqua nostrud esse mollit et voluptate nostrud. Quis quis incididunt ipsum aliqua.","spans":[]}]},"slice_type":"slice_menu","id":"_Default"}
+      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"label":[{"type":"paragraph","text":"Culpa enim magna quis ex est ad occaecat dolore do culpa nulla proident. In consequat labore eiusmod tempor nisi mollit id veniam ad proident nisi. Nulla ullamco id consequat.","spans":[]}],"link":{"link_type":"Web","url":"https://slicemachine.dev"}}],"primary":{"title":[{"type":"paragraph","text":"Consequat nulla laboris dolore tempor nisi pariatur exercitation consequat incididunt.","spans":[]}]},"slice_type":"slice_menu","id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

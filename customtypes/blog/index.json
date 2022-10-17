@@ -1,16 +1,15 @@
 {
-  "id": "footer",
-  "label": "footer",
-  "repeatable": false,
+  "id": "blog",
+  "label": "Blog",
+  "repeatable": true,
   "status": true,
   "json": {
     "Main": {
-      "logo": {
-        "type": "Image",
+      "uid": {
+        "type": "UID",
         "config": {
-          "label": "logo",
-          "constraint": {},
-          "thumbnails": []
+          "label": "blog_uid",
+          "placeholder": ""
         }
       },
       "slices": {
@@ -18,10 +17,7 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "slice_menu": {
-              "type": "SharedSlice"
-            },
-            "slice_follow": {
+            "section_about": {
               "type": "SharedSlice"
             }
           }
