@@ -2,7 +2,7 @@
     <section class="section-solutions">
         <div class="wrapper">
             <div class="container-discover">
-              <PrismicText :field="slice.primary.title" wrapper="h2"/>
+              <PrismicRichText :field="slice.primary.title"/>
                 <div class="separate-bar"></div>
             </div>
         <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">  
