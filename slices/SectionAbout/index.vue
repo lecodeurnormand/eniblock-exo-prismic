@@ -32,3 +32,52 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+.section-about{
+    border-bottom: 1px solid $greyscale_light;
+    .wrapper{
+        width: 1208px;
+        margin: auto;
+    }
+    .container-about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:70px;
+        font-family: $font_2_regular;
+        margin:100px 0 100px 0;
+    }
+    h2{
+        @include styleH('h2');
+        margin-bottom: 55px;
+        strong{
+            font-family: $font_1_bold;
+        }
+    }
+    .separate-bar{
+        margin-bottom: 40px;
+        margin-top: 40px;
+        height: 8px;
+        width: 40px;
+        border: none;
+        background-color:  $primary_color_purple;
+    }
+    p{
+        @include parag;
+        width:230px ;
+        color: $greyscale_grey;
+    }
+    .container-left{
+        justify-content: left;
+        align-self: flex-end;
+    }
+    .container-right {
+        align-self: flex-end;
+        a{
+        display: flex;
+        color: $greyscale_black;
+        font-family: $font_2_bold;
+        }
+    }
+}
+</style>

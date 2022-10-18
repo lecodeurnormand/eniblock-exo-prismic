@@ -2,7 +2,7 @@
     <div>
       <Header v-if="header.data"
       :header="header"/>
-      <main><nuxt/></main>
+     <nuxt/>
       <Footer v-if="footer.data" 
       :footer="footer"/>
     </div>

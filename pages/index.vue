@@ -1,5 +1,7 @@
 <template>
-    <slice-zone :components="components" :slices="home.data.slices" />
+    <main class="home">
+      <slice-zone :components="components" :slices="home.data.slices" />
+    </main>
 </template>
 
 <script>
@@ -9,7 +11,6 @@ export default {
     data: function(){
         return {components}
     },
-    // ALL 
     async asyncData({ $prismic, error }) {
     const home = await $prismic.api.getSingle('page')
     if (home) {

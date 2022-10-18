@@ -1044,7 +1044,13 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/guillaumeducuing/eniblock-exo/slices/SectionNewsroom/default/preview.png",
+            "width": 2652,
+            "height": 654
+          }
+        }
       },
       "section_platform": {
         "library": "slices",
@@ -1866,6 +1872,76 @@
           }
         }
       },
+      "slice_copyright": {
+        "library": "slices",
+        "id": "slice_copyright",
+        "name": "SliceCopyright",
+        "description": "SliceCopyright",
+        "model": {
+          "id": "slice_copyright",
+          "type": "SharedSlice",
+          "name": "SliceCopyright",
+          "description": "SliceCopyright",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SliceCopyright",
+              "primary": {},
+              "items": {
+                "label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "label": [
+                  {
+                    "type": "paragraph",
+                    "text": "Qui do aute mollit et dolor sit elit ad aliquip aliquip ut ipsum Lorem.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "slice_copyright"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "slice_follow": {
         "library": "slices",
         "id": "slice_follow",
@@ -1941,7 +2017,13 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/guillaumeducuing/eniblock-exo/slices/SliceFollow/default/preview.png",
+            "width": 486,
+            "height": 288
+          }
+        }
       },
       "slice_menu": {
         "library": "slices",

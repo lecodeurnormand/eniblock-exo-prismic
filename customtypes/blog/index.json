@@ -19,6 +19,9 @@
           "choices": {
             "section_about": {
               "type": "SharedSlice"
+            },
+            "section_ready": {
+              "type": "SharedSlice"
             }
           }
         }

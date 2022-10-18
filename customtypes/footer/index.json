@@ -23,6 +23,9 @@
             },
             "slice_follow": {
               "type": "SharedSlice"
+            },
+            "slice_copyright": {
+              "type": "SharedSlice"
             }
           }
         }

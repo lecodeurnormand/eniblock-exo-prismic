@@ -13,6 +13,7 @@ import SectionReady from './SectionReady';
 import SectionSolutions from './SectionSolutions';
 import SectionTouch from './SectionTouch';
 import SectionWho from './SectionWho';
+import SliceCopyright from './SliceCopyright';
 import SliceFollow from './SliceFollow';
 import SliceMenu from './SliceMenu';
 
@@ -30,6 +31,7 @@ export {
 	SectionSolutions,
 	SectionTouch,
 	SectionWho,
+	SliceCopyright,
 	SliceFollow,
 	SliceMenu,
 };
@@ -48,6 +50,7 @@ export const components = {
 	section_solutions: SectionSolutions,
 	section_touch: SectionTouch,
 	section_who: SectionWho,
+	slice_copyright: SliceCopyright,
 	slice_follow: SliceFollow,
 	slice_menu: SliceMenu,
 };

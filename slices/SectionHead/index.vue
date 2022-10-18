@@ -398,3 +398,171 @@ export default {
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
 }
 </script>
+
+<style lang="scss" scoped>
+.section-head{
+    padding-top: 207px;
+    background-color: $greyscale_black;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font_1_regular;
+    color: $main_white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 1208px;
+    }
+    .container-design{
+        width: 687px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1{
+            @include styleH('h1',$main_white);
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            .title-bold{
+                font-family: $font_1_bold;
+            }
+            .title-light{
+                font-family: $font_1_light
+            }
+            .text-1{
+                position: relative;
+                height: 60px;
+            }
+            // .text-1::before{
+            //     content:"";
+            //     position: absolute;
+            //     top:0;
+            //     left: 0;
+            //     height:100% ;
+            //     width: 100%;
+            //     background-color: $greyscale_black;
+            //     animation: animate 4s steps(30) infinite;
+            // }
+            // @keyframes animate{
+            //     40%,60%{
+            //         left: 100%;
+            //     }
+            //     100%{
+            //         left: 0;
+            //     }
+            // } 
+            .text-1::after{
+                content: '';
+                position: absolute;
+                inset: 0;
+                top: 50px;
+                height: 8px;
+                width: 40px;
+                background-color: $greyscale_light;
+                animation: animate 4s steps(30) infinite;
+            //     animation : blink 0.4s infinite;
+            //     @keyframes blink{
+            //         0%{
+            //             opacity: 0;
+            //         }
+            // }
+            }
+
+        }
+        .subtitle{
+            @include styleH('h6',$main_white);
+            font-weight: 400;
+        }
+    }
+    .button-call{
+        display: inline-flex;
+        background-color: $primary_color_green;
+        border: none;
+        border-radius: 4px;
+        padding: 15px 35px 15px 35px;
+        margin-top: 32px;
+        &:hover{
+            @include hover($bg:transparent,$border:1px $main_white solid);
+            .btn-text{
+                color: $main_white;
+            }
+        }
+        .btn-text{
+            @include button;
+            color:$greyscale_black;
+            
+        }
+    }
+    .container-partners{
+        margin-top: 129px;
+        width: 100%;
+        p{
+            @include parag;
+        }
+    }
+    .container-logos-partners{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            max-width: 90px;
+            max-height: 90px;
+            mix-blend-mode: difference;
+        }
+    }
+    .container-svg{
+        flex: 1;
+        position: relative;
+        img{
+            position: absolute;
+            top: -240px;
+            left: 50px;
+        }
+        .left-top-piece{
+            animation: ltp 6.5s ease-in-out infinite;
+            @keyframes ltp {
+                0%{
+                    transform: translateY(-30px);
+                }
+                50%{
+                    transform: translateY(120px);
+                }
+                100%{
+                    transform: translateY(-30px);
+                }
+            }
+        }
+        
+        .bot-piece{
+            animation: bp 6.5s ease-in-out infinite ;
+            @keyframes bp {
+                0%{
+                    transform: translateY(120px);
+                }
+                50%{
+                    transform: translateY(-122px);
+                }
+                100%{
+                    transform: translateY(120px);
+                }
+            }
+        }
+        .right-top-piece{
+            animation: rtp 6.5s ease-in-out infinite;
+            @keyframes rtp {
+                0%{
+                    transform: translateY(-40px);
+                }
+                50%{
+                    transform: translateY(217px);
+                }
+                100%{
+                    transform: translateY(-40px);
+                }
+            }
+        }
+    }
+}
+</style>

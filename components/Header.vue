@@ -2,8 +2,10 @@
     <header>
     <div class="wrapper">
         <div class="container-logo">
-                <div class="logo-eniblock" >
+                <div class="logo-eniblock">
+                    <nuxt-link to="/">
                     <PrismicImage :field="header.data.logo" />
+                    </nuxt-link>
                 </div>
             
             <div class="container-burger">

@@ -272,6 +272,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "SliceCopyright": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

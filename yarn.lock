@@ -1589,7 +1589,7 @@
   "resolved" "https://registry.npmjs.org/@prismicio/types/-/types-0.2.3.tgz"
   "version" "0.2.3"
 
-"@prismicio/vue@^2.1.0":
+"@prismicio/vue@^2.1.0", "@prismicio/vue@^2.2.0":
   "integrity" "sha512-k5WZor+XaNvmwBHbTL1phb/i+9VKNxvFgdaWYJpSqJVUyDaAQeuRFxt1pWuGGKGLsgf/SmiBvN84KX8QkfjZaw=="
   "resolved" "https://registry.npmjs.org/@prismicio/vue/-/vue-2.2.0.tgz"
   "version" "2.2.0"

@@ -24,3 +24,35 @@ export default {
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
 }
 </script>
+
+<style lang="scss" scoped>
+.section-join{
+    .container-partners{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 1px solid $greyscale_light;
+        padding: 54px 0;
+    }
+    .partners{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .partners h5{
+        @include styleH('h5');
+    }
+    .logos-footer{
+        display: flex;
+        width: 960px;
+        align-items: center;
+        justify-content: space-around;
+        img{
+            width: 110px;
+            height: 110px;
+            padding: 27px;
+        }
+    }
+}
+</style>

@@ -43,7 +43,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // // SCSS file in the project
-    '~/assets/scss/style.scss'
+    '~/assets/scss/style.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -72,7 +72,7 @@ export default {
   prismic: {
     endpoint: apiEndpoint,
     modern: true,
-    apiOptions:{
+    // apiOptions:{
       routes:[
         {
           type: 'page',
@@ -83,7 +83,7 @@ export default {
           path: '/:uid'
         }
       ]
-    }
+    // }
     /* see configuration for more */
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
